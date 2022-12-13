@@ -8,5 +8,8 @@ urlpatterns = [
     path('api/verify/', TokenVerifyView.as_view()),
     path('api/auth/', include('accounts.urls')),
     path('admin/', admin.site.urls),
+    path('', include('app.urls')),
+    path('accounts2/', include('accounts2.urls')),
+    path('accounts2/', include('allauth2.urls')),
 ]
 

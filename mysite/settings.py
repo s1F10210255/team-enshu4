@@ -35,7 +35,13 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework', 
     'app', 
-    'accounts', 
+    'accounts',
+    'widget_tweaks',
+    'accounts2',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount' 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -149,3 +155,8 @@ SIMPLE_JWT = {
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
 
+
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
