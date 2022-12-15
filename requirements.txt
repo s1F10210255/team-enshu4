@@ -8,3 +8,6 @@ markdown
 django-filter 
 django-allauth
 django-widget-tweaks
+
+stripe
+Pillow
