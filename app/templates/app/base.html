@@ -6,19 +6,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'images/favicon/favicon.ico' %}" id="favicon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>ECサイト</title>
+    <title>SATO coffe OnlineShop</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">ECサイト</a>
+            <a class="navbar-brand" href="{% url 'test' %}">SATO coffe OnlineShop</a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">ホーム</a>
+                    <a class="nav-link" href="{% url 'test' %}">ホーム</a>
                 </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -56,7 +57,7 @@
     </main>
 
     <footer class="py-2 bg-dark">
-        <p class="m-0 text-center text-white">Copyright &copy; Django Startup 2020</p>
+        <p class="m-0 text-center text-white">SATO coffe OnlineShop</p>
     </footer>
 
     {% block extra_js %}

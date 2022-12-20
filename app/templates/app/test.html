@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SATO coffe OnlineShop</title>
+    <link rel="icon" href="{% static 'images/favicon/favicon.ico' %}" id="favicon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    
+
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+    
+    <!-- Header Section -->
+    <section class="tophead" role="tophead"> 
+      <!-- Navigation Section -->
+      <header id="header">
+        <div class="header-content clearfix"> <a class="logo" href="#">SATO COFFESHOP</a>
+          <nav class="navigation" role="navigation">
+            <ul class="primary-nav">
+              <li><a href="#header-slider">Home</a></li>
+              <li><a href="#services">Our Story</a></li>
+              <li><a href="#portfolio">Our goods</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+      </header>
+      <!-- Navigation Section --> 
+    </section>
+    <!-- Header Section --> 
+    <!-- Slider Section -->
+    <section id="header-slider" class="section">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active"> <img src="{% static 'images/slider/slid2.jpg' %}" alt="Chania">
+            <div class="carousel-caption">
+              <h6>We are SATO COFFEE</h6>
+              <p1>1982年から続く～伝統の味～</p1>
+            </div>
+          </div>
+          <div class="item"> <img src="{% static 'images/slider/slid1.jpg' %}" alt="Chania">
+            <div class="carousel-caption">
+              <h6>We are SATO COFFEE</h6>
+              <p>Continuing since 1982 ~Traditional taste~</p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls --> 
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div>
+    </section>
+    <!-- Slider Section --> 
+    <!-- Service Section -->
+    <section id="services" class="section services">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="services-content">
+              <h4>SATO COFFEE は１９８２年から続く喫茶店です。</h4>
+              <p>1982年、昭和57年に東京都、赤羽で佐藤隼人が創業し、以来、時代と主に愛されてきました。現在店舗で使われているカップやスプーンは、昔のデザインを復元しています。店頭には開店時の新聞広告なども展示してあります。当時の文化人に思いを馳せつつ、コーヒーを飲む、ご興味のある方はぜひいらしてください。</p>
+              
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="{% static 'images/portfolio/kissa.jpg' %}">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <i class="bi bi-basket"></i>
+    <section id="portfolio" class="section portfolio">
+      <div class="container-fluid">
+        <div class="shop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <a href="{% url 'account_login' %}">ショップ</a>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 portfolio-item"> <a href="{% url 'account_login' %}" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>Original Mug</h3>
+                <h4>sato logo mug</h4>
+              </div>
+            </div>
+            <img src="{% static 'images/portfolio/magcup.jpg' %}" class="img-responsive" alt=""> </a> </div>
+          <div class="col-sm-6 portfolio-item"> <a href="{% url 'account_login' %}" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>sato coffe</h3>
+                <h4>sato original coffee brande</h4>
+              </div>
+            </div>
+            <img src="{% static 'images/portfolio/work-2.jpg' %}" class="img-responsive" alt=""> </a> </div>
+          <div class="col-sm-6 portfolio-item"> <a href="{% url 'account_login' %}" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>original cloth</h3>
+                <h4>sato logo T-shirt</h4>
+              </div>
+            </div>
+            <img src="{% static 'images/portfolio/tshirts.jpg' %}" class="img-responsive" alt=""> </a> </div>
+          <div class="col-sm-6 portfolio-item"> <a href="{% url 'account_login' %}" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>Phone case</h3>
+                <h4>with sato coffe Logo </h4>
+              </div>
+            </div>
+            <img src="{% static 'images/portfolio/phone.jpg' %}" class="img-responsive" alt=""> </a> </div>
+          <div class="col-sm-6 portfolio-item"> <a href="{% url 'account_login' %}" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>MASK</h3>
+                <h4>Don't lose to Covid19</h4>
+              </div>
+            </div>
+            <img src="{% static 'images/portfolio/mask.jpg' %}" class="img-responsive" alt=""> </a> </div>
+          <div class="col-sm-6 portfolio-item"> <a href="{% url 'account_login' %}" class="portfolio-link">
+            <div class="caption">
+              <div class="caption-content">
+                <h3>Tank tops</h3>
+                <h4>Be a wild</h4>
+              </div>
+            </div>
+            <img src="{% static 'images/portfolio/wild.jpg' %}" class="img-responsive" alt=""> </a> </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio grid section --> 
+    
+    <!-- footer section -->
+    <footer id="contact" class="footer">
+      <div class="container-fluid">
+        <div class="col-md-2 left">
+          <h4>Store Location</h4>
+          <p> Akabane Tokyo  Japan.</p>
+        </div>
+        <div class="col-md-2 left">
+          <h4>Contact</h4>
+          <p> Call: 0000-xxx-xxxx <br>
+            Email : <a href="mailto:django.kaihatu.test@gmail.com"> django.kaihatu.test@gmail.com </a></p>
+        </div>
+        <div class="col-md-2 left">
+          <h4>Social presense</h4>
+          <ul class="footer-share">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 right">
+          <h4>we are iniad students</h4>
+          <a href="https://www.iniad.org/"><img src="{% static 'images/logo/iniad.jpg' %}"></a>
+        </div>
+        <div class="col-md-1 right">
+          <h4> Sato coffe</h4>
+          <img src="{% static 'images/logo/satologo2.png' %}">
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+    
+
+    
+    <!-- JS FILES --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+    <script src="{% static 'js/jquery.flexslider-min.js' %}"></script> 
+    <script src="{% static 'js/retina.min.js' %}"></script> 
+    <script src="{% static 'js/modernizr.js' %}"></script> 
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+    </body>
+</html>

@@ -1,6 +1,3 @@
-// Stripe公式ドキュメント
-// https://stripe.com/docs/payments/accept-a-payment-charges#web
-
 
 const stripe = Stripe('pk_test_51MF6ugGPXD0B68moBMToCE8ebWoeVAnKFBCzPRM8XiTPcM31AZzsRUdDFZ7eEk21odkeZWKX0dGV4J5Jp3itR63J006NQ7f8BI');
 const elements = stripe.elements();

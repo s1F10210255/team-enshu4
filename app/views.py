@@ -20,6 +20,10 @@ class ItemDetailView(DetailView):
     template_name = 'app/product.html'
 
 
+class testView(ListView):
+    model =Item
+    template_name='app/test.html'
+
 class ThanksView(LoginRequiredMixin, TemplateView):
     template_name = 'app/thanks.html'
 
